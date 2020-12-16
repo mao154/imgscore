@@ -395,7 +395,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         row  = '"' + (code.id || code.AccessCode || 'NA') + '", "' +
             (code.workerId || 'NA') + '", "' + email + '"\n';
 
-        fs.appendFile(gameRoom.dataDir + 'email.csv', row, function(err) {
+        fs.appendFile(gameRoom.dataDir + '.email.csv', row, function(err) {
             if (err) {
                 console.log(err);
                 console.log(row);
